@@ -1,5 +1,5 @@
 Link za stranicu web shopa je:
-[Nateo](https://hci-2023-2024.vercel.app/)<br>
+[Nateo](https://hci-2023-2024-nateo.vercel.app/)<br>
 
 
 Link za izvještaj o projektu je:
