@@ -21,7 +21,7 @@ export default function Home() {
               Space
             </div>
             <div className={`${roboto.className} md:md:top-2/4 sm:mt-8 mt-4`}>
-              <Link href="/products">
+              <Link href="/Products">
                 <Button variant="default" size="lg">
                   Explore Now
                 </Button>
@@ -60,35 +60,35 @@ export default function Home() {
       <div className='flex flex-col xl:flex-row xl:justify-around justify-center items-center p-4 md:p-24 gap-y-8 gap-x-8 w-full'>
         <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full justify-items-center">
           <div className="flex flex-col justify-center items-center">
-            <Link href="/products">
+            <Link href="/Products">
               <Image src={"/LivingRoom.jpg"} alt="Living Room" width={1000} height={1000} className="rounded-lg shadow-lg" />
             </Link>
             <div className="flex justify-center mt-4 w-full">
-            <Link href="/products">
+            <Link href="/Products">
               <span className="text-lg font-semibold">Living Room</span>
               </Link>
 
             </div>
           </div>
           <div className="flex flex-col justify-center items-center">
-          <Link href="/products">
+          <Link href="/Products">
             <Image src={"/Bedroom.jpg"} alt="Bedroom" width={1000} height={1000} className="rounded-lg shadow-lg" />
             </Link>
 
             <div className="flex justify-center mt-4 w-full">
-            <Link href="/products">
+            <Link href="/Products">
               <span className="text-lg font-semibold">Bedroom</span>
               </Link>
 
             </div>
           </div>
           <div className="flex flex-col justify-center items-center">
-          <Link href="/products">
+          <Link href="/Products">
             <Image src={"/Kitchen.jpg"} alt="Kitchen" width={1000} height={1000} className="rounded-lg shadow-lg" />
           </Link>
 
             <div className="flex justify-center mt-4 w-full">
-            <Link href="/products">
+            <Link href="/Products">
               <span className="text-lg font-semibold">Kitchen</span>
             </Link>
 
