@@ -53,7 +53,7 @@ const ProductContainer: React.FC<ProductContainerProps> = ({ products }) => {
         ))}
       </div>
       <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 p-4">
           {filteredProducts.map((product) => (
             <div key={product.id} className="shadow-lg rounded-lg p-4 w-full bg-slate-700 max-w-xs min-w-[250px] mx-auto">
               <div className="flex flex-col space-y-4">
@@ -75,7 +75,7 @@ const ProductContainer: React.FC<ProductContainerProps> = ({ products }) => {
                 </div>
                 <div className="text-sm text-gray-400">{product.description}</div>
                 <div className="text-xs text-gray-500">
-                  <span className="inline-block bg-gray-700 text-white rounded-sm px-2 py-1">{product.room}</span>
+                  <span className="inline-block bg-gray-800 text-white rounded-sm px-2 py-1">{product.room}</span>
                 </div>
               </div>
             </div>

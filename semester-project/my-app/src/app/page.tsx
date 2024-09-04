@@ -20,7 +20,7 @@ export default function Home() {
               {"\n"}
               Space
             </div>
-            <div className={`${roboto.className} md:md:top-2/4 sm:mt-8 mt-4`}>
+            <div className={`${roboto.className} md:absolute sm:top-3/4 md:mt-32 mt-4`}>
               <Link href="/Products">
                 <Button variant="default" size="lg">
                   Explore Now
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='flex xl:flex-row flex-col xl:justify-around justify-center items-center p-2 pt-8 md:p-24 gap-y-8 gap-x-8 w-full bg-slate-700 text-white'>
+      <div className='flex xl:flex-row flex-col xl:justify-around justify-center items-center py-8 md:p-24 gap-y-8 gap-x-8 w-full bg-slate-700 text-white'>
         <div className={`${roboto.className} m-0 rounded-md md:w-full w-screen`}>
           <Image src={"/EcoFurniture.jpg"} width={1000} height={1000} alt="" className="rounded-lg shadow-lg" />
         </div>
