@@ -16,13 +16,13 @@ export default function About() {
         </div>
         <div className="my-8 text-lg leading-relaxed ">
           <p>
-            Welcome to Nateo, your number one source for all things furniture. We're dedicated to giving you the very best of furniture, with a focus on quality, customer service, and uniqueness.
+            Welcome to Nateo, your number one source for all things furniture. We are dedicated to giving you the very best of furniture, with a focus on quality, customer service, and uniqueness.
           </p>
           <p className="mt-4">
-            Founded in 2023, Nateo has come a long way from its beginnings. When we first started out, our passion for eco-friendly and customizable furniture drove us to do tons of research so that Nateo can offer you the world's most advanced furniture. We now serve customers all over the world and are thrilled that we're able to turn our passion into our own website.
+            Founded in 2023, Nateo has come a long way from its beginnings. When we first started out, our passion for eco-friendly and customizable furniture drove us to do tons of research so that Nateo can offer you the worlds most advanced furniture. We now serve customers all over the world and are thrilled that we are able to turn our passion into our own website.
           </p>
           <p className="mt-4">
-            We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+            We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please dont hesitate to contact us.
           </p>
           <p className="mt-4">
             Sincerely,

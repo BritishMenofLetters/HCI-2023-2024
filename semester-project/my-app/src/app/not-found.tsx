@@ -17,7 +17,7 @@ export default function Custom404() {
   return (
     <main className={`${roboto.className} flex min-h-screen flex-col items-center justify-between p-4`}>
       <div className="w-full max-w-4xl mx-auto text-center">
-        <p className="text-2xl mt-4">Oops! The furniture you're looking for doesn't exist.</p>
+        <p className="text-2xl mt-4">Oops! The furniture you are looking for doesnt exist.</p>
         
         <div className="mt-8 inline-block px-6 py-3 text-lg font-medium text-white bg-slate-800 rounded-md hover:bg-slate-700">
           <Link href="/">

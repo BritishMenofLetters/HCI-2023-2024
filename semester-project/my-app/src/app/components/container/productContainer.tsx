@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
-import { TypeProductListItem } from '@/types';
+
+// Define the TypeProductListItem type
+interface TypeProductListItem {
+  id: string;
+  room: string;
+  object: string;
+  price: string;
+  description: string;
+  image: string;
+}
 
 interface ProductContainerProps {
   products: TypeProductListItem[];
@@ -9,13 +18,13 @@ interface ProductContainerProps {
 
 const ProductContainer: React.FC<ProductContainerProps> = ({ products }) => {
   const [selectedRoom, setSelectedRoom] = useState('All');
-  const [favorites, setFavorites] = useState<number[]>([]);
+  const [favorites, setFavorites] = useState<string[]>([]); // Updated to string[]
 
   const handleRoomChange = (room: string) => {
     setSelectedRoom(room);
   };
 
-  const handleFavoriteToggle = (productId: number) => {
+  const handleFavoriteToggle = (productId: string) => { // Updated to string
     setFavorites((prevFavorites) =>
       prevFavorites.includes(productId)
         ? prevFavorites.filter((id) => id !== productId)
@@ -25,7 +34,8 @@ const ProductContainer: React.FC<ProductContainerProps> = ({ products }) => {
 
   const filteredProducts = selectedRoom === 'All' ? products : products.filter(product => product.room === selectedRoom);
 
-  const uniqueRooms = ['All', ...new Set(products.map(product => product.room))];
+  // Updated uniqueRooms to use Array.from
+  const uniqueRooms = ['All', ...Array.from(new Set(products.map(product => product.room)))];
 
   return (
     <div>
@@ -54,9 +64,9 @@ const ProductContainer: React.FC<ProductContainerProps> = ({ products }) => {
                   <div className="text-2xl font-bold text-white">{product.price}</div>
                   <div
                     className="h-10 w-10 flex items-center justify-center cursor-pointer"
-                    onClick={() => handleFavoriteToggle(product.id)}
+                    onClick={() => handleFavoriteToggle(product.id)} // Updated to string
                   >
-                    {favorites.includes(product.id) ? (
+                    {favorites.includes(product.id) ? ( // Updated to string
                       <FaHeart className="text-red-500 hover:text-red-700" />
                     ) : (
                       <FaRegHeart className="text-white hover:text-red-500" />

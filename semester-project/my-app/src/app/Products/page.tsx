@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import ProductContainer from '@/components/container/productContainer';
-import Footer from '@/components/Footer';
+import ProductContainer from '@/productContainer';
+import Footer from '@/Footer';
 
 // Define the types
 interface TypeProductListItem {
