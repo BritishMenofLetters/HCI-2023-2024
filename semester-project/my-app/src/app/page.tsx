@@ -20,7 +20,7 @@ export default function Home() {
               {"\n"}
               Space
             </div>
-            <div className={`${roboto.className} sm:mt-8 mt-4`}>
+            <div className={`${roboto.className} md:md:top-2/4 sm:mt-8 mt-4`}>
               <Link href="/products">
                 <Button variant="default" size="lg">
                   Explore Now
