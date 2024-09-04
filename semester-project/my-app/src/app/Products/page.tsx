@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import ProductContainer from '@/components/container/ProductContainer';
+import ProductContainer from '@/components/container/productContainer';
 import Footer from '@/components/Footer';
 
 // Define the types
