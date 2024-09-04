@@ -20,8 +20,8 @@ export default function Home() {
               {"\n"}
               Space
             </div>
-            <div className={`${roboto.className} mt-4`}>
-              <Link href="/hero">
+            <div className={`${roboto.className} sm:mt-8 mt-4`}>
+              <Link href="/products">
                 <Button variant="default" size="lg">
                   Explore Now
                 </Button>
@@ -64,26 +64,26 @@ export default function Home() {
               <Image src={"/LivingRoom.jpg"} alt="Living Room" width={1000} height={1000} className="rounded-lg shadow-lg" />
             </Link>
             <div className="flex justify-center mt-4 w-full">
-            <Link href="/Products">
+            <Link href="/products">
               <span className="text-lg font-semibold">Living Room</span>
               </Link>
 
             </div>
           </div>
           <div className="flex flex-col justify-center items-center">
-          <Link href="/Products">
+          <Link href="/products">
             <Image src={"/Bedroom.jpg"} alt="Bedroom" width={1000} height={1000} className="rounded-lg shadow-lg" />
             </Link>
 
             <div className="flex justify-center mt-4 w-full">
-            <Link href="/Products">
+            <Link href="/products">
               <span className="text-lg font-semibold">Bedroom</span>
               </Link>
 
             </div>
           </div>
           <div className="flex flex-col justify-center items-center">
-          <Link href="/Products">
+          <Link href="/products">
             <Image src={"/Kitchen.jpg"} alt="Kitchen" width={1000} height={1000} className="rounded-lg shadow-lg" />
           </Link>
 
